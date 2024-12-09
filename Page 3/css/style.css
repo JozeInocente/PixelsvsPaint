@@ -1,3 +1,4 @@
+/* Basic reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,6 @@ body {
   font-weight: bold;
   background-color: black;
   color: white;
-  margin: 0;
 }
 
 header {
@@ -17,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  padding-right: 5%;
 }
 
 .logo img {
@@ -41,7 +40,6 @@ nav ul li a.active {
   color: orange;
   text-decoration: none;
 }
-
 .events-title {
   text-align: center;
   margin-top: 50px;
@@ -58,41 +56,72 @@ nav ul li a.active {
 }
 
 .events-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px;
 }
 
 .event-day {
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 40px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .event-day h2 {
   font-size: 2rem;
   color: orange;
   margin-bottom: 20px;
-  border-bottom: 2px solid orange;
+  text-align: center;
+}
+
+.event-container {
+  position: relative;
+}
+
+.orange-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
   padding-bottom: 10px;
 }
 
-.event {
-  background-color: #1a1a1a;
-  border-left: 6px solid orange;
-  margin-bottom: 20px;
-  padding: 20px 30px;
-  border-radius: 8px;
+.bar {
+  height: 30px;
+  background-color: orange;
 }
 
-.event h3 {
+/* Bar widths */
+.bar:nth-child(1) { width: 55px; margin-right: 8px; }
+.bar:nth-child(2) { width: 50px; margin-right: 10px; }
+.bar:nth-child(3) { width: 45px; margin-right: 12px; }
+.bar:nth-child(4) { width: 40px; margin-right: 14px; }
+.bar:nth-child(5) { width: 35px; margin-right: 16px; }
+.bar:nth-child(6) { width: 30px; margin-right: 18px; }
+.bar:nth-child(7) { width: 25px; margin-right: 20px; }
+.bar:nth-child(8) { width: 20px; margin-right: 22px; }
+.bar:nth-child(9) { width: 15px; margin-right: 24px; }
+.bar:nth-child(10) { width: 10px; margin-right: 26px; }
+
+
+.event-box {
+  background-color: #1a1a1a;
+  border-left: 6px solid orange;
+  padding: 20px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.event-box h3 {
   font-size: 1.5rem;
   color: white;
   margin-bottom: 10px;
 }
 
-.event p {
+.event-box p {
   font-size: 1rem;
   color: #e0e0e0;
   margin-bottom: 8px;
@@ -131,17 +160,4 @@ footer {
 
 .footer-right p {
   text-align: right;
-}
-
-.orange-bars {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-  padding-bottom: 10px;
-}
-
-.bar {
-  height: 150px;
-  background-color: orange;
 }
