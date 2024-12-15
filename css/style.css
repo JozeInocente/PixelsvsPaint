@@ -55,7 +55,6 @@
     background-color: orange;
   }
   
-  /* Bar widths */
   .bar:nth-child(1) { width: 120px; margin-right: 2px; }
   .bar:nth-child(2) { width: 115px; margin-right: 4px; }
   .bar:nth-child(3) { width: 110px; margin-right: 6px; }

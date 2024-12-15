@@ -54,7 +54,6 @@ nav ul li a.active {
   background-color: black;
 }
 
-/* Bar widths */
 .bar:nth-child(1) { width: 70%; margin-right: 22px; }
 .bar:nth-child(11) { width: 70px; margin-right: 22px; }
 .bar:nth-child(12) { width: 65px; margin-right: 24px; }

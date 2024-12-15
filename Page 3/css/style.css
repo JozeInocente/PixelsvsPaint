@@ -1,4 +1,3 @@
-/* Basic reset */
 * {
   margin: 0;
   padding: 0;
@@ -42,12 +41,15 @@ nav ul li a.active {
 }
 .events-title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .events-title h1 {
-  font-size: 3rem;
+  font-size: 12.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
   color: white;
+  margin-bottom: 0px;
 }
 
 .events-title p {
@@ -92,7 +94,6 @@ nav ul li a.active {
   background-color: orange;
 }
 
-/* Bar widths */
 .bar:nth-child(1) { width: 55px; margin-right: 8px; }
 .bar:nth-child(2) { width: 50px; margin-right: 10px; }
 .bar:nth-child(3) { width: 45px; margin-right: 12px; }
